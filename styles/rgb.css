@@ -1,0 +1,61 @@
+body {
+	background-color: lightgrey;
+	}
+.button-container {
+        display: flex;
+        gap: 10px;
+    }
+input[type="submit"] {
+        padding: 10px 20px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+input[type="submit"][value="Rot"] {
+        background-color: red;
+    }
+
+    input[type="submit"][value="Blau"] {
+        background-color: blue;
+    }
+
+    input[type="submit"][value="Grün"] {
+        background-color: green;
+    }
+	input[type="submit"][value="Magenta"] {
+        background-color: magenta;
+    }
+	input[type="submit"][value="Farbe Ändern"] {
+        padding: 10px 20px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        animation: rainbow 10s infinite;
+        transition: transform 0.3s;
+    }
+
+     @keyframes rainbow {
+        0% { background-color: red; }
+        14% { background-color: orange; }
+        28% { background-color: yellow; }
+        42% { background-color: green; }
+        57% { background-color: blue; }
+        71% { background-color: indigo; }
+        85% { background-color: violet; }
+        100% { background-color: red; }
+    }
+
+    input[type="submit"]:hover {
+        opacity: 0.8;
+    }
+	 input[type="text"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 200px;
+        transition: border-color 0.3s;
+    }
